@@ -1,0 +1,39 @@
+<div class="container">
+
+
+  <!--<div class="panel panel-default">-->
+      <!--<div class="panel-heading">Products</div>-->
+      <!--<img class="misc-image" ng-src="../../public/images/misc/background.jpg" alt="">-->
+      <!--<div class="panel-body">
+         <ul class="list-group">-->
+             <!--<ul class="list-inline">
+                <li ng-repeat="product in main.products">
+                    <h4>{{product.name}}</h4>
+                    <img class="product-image" ng-src="../../public/images/speakers/{{product.shortname}}.jpg" alt="">
+                </li>
+            </ul>-->
+
+  <!--<div class="search">
+        <h1>Product Directory</h1>
+        <label>search: </label>
+        <input ng-model="query" placeholder="Search for artists" autofocus>
+  </div>-->
+
+        <ul class="productlist">
+            <li ng-animate="'animate'" class="product cf" ng-repeat="product in main.products">
+            <a href="{{product.linkToAmazon}}">
+
+                <img ng-src="../../public/images/products/{{product.shortname}}.jpg" alt="Photo of {{product.name}}">
+                <div class="info">
+                    <h4>{{product.name}}</h4>
+                    <h5>{{product.summary}}</h5>
+                </div>
+            </a>
+            </li>
+        </ul>  
+
+         <!--</ul>
+      </div>-->
+  <!--</div>-->
+
+</div>
